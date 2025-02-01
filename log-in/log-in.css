@@ -42,7 +42,7 @@ body{
 
 }
 .polygonLogin{
-    background-image: url(../svg/Login\ Polygon.svg);
+    background-image: url(../svg/loginPolygon.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 420px;

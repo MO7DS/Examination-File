@@ -2,11 +2,11 @@
     z-index: -50;
     position: absolute;
     top: 470px;
-    left: -199px;
+    left: -118px
 }
 .container{
     flex-direction: column;
-    gap:56px
+    gap:60px
 }
 .contentContainer{
     display: flex;
@@ -44,7 +44,7 @@
     display:flex;
     flex-direction: column;
     justify-content: space-around;
-    background-image: url(../svg/Exam\ Default.svg);
+    background-image: url(../svg/examDefault.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width:245px;

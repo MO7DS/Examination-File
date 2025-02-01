@@ -114,8 +114,7 @@ function emailValidation(inputElement , errorElement ){
 
     // check if the mail include is empty
     if(inputemail === ""){
-    //     errorElement.style.display = "block";
-    //     errorElement.innerHTML = "Email Shouldn't be empty";
+
         emailFilled = false;
         emailErrorVisible = true;
         return false
@@ -208,8 +207,7 @@ function passwordValidation(inputElement, errorElement){
     //Checking if the password doesn't empty
 
     if(inputPass === ""){
-    //     errorElement.style.display = "block";
-    //     errorElement.innerHTML = `Password can't be empty`    
+ 
         passwordFilled = false;
         passwordErrorVisible = true;
         return false;
@@ -253,8 +251,7 @@ function confirmPasswordValidation(inputElement , errorElement , originalPasswor
     
     //Checking the confirm password is not empty
     if(inputPass === ""){
-    //     errorElement.style.display = "block";
-    //     errorElement.innerHTML = `Password can't be empty` 
+
         confirmPassswordFilled = false ;
         confirmPasswordErrorVisible = true;
         return false;

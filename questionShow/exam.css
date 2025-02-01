@@ -1,4 +1,6 @@
-
+body{
+    position: relative;
+}
 #responseError{
     display: none;
 }
@@ -64,7 +66,7 @@
 }
 
 .disable{
-    background-image: url(../svg/Button\ Disable.svg);
+    background-image: url(../svg/buttonDisable.svg);
     background-size: cover;
     color:#7b7b7bee;
     width:124px;
@@ -77,7 +79,7 @@
 
 
 #submit{
-    background-image: url(../svg/Button\ Submit.svg);
+    background-image: url(../svg/buttonSubmit.svg);
     background-size: cover;
     color:#2D1401;
     width:124px;
@@ -89,7 +91,7 @@
 }
 #exam-timer{
     position:relative;
-    background-image: url(../svg/Timer\ Active.svg);
+    background-image: url(../svg/timerActive.svg);
     background-size: cover;
     color: #2D1401;
     width: 124px;
@@ -144,7 +146,7 @@ input[type="radio" i] {
     margin:0px;
 }
 .flag{
-    background-image:url(../svg/Flag\ disable.svg);
+    background-image:url(../svg/flagDisable.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width:65px;
@@ -164,7 +166,7 @@ input[type="radio" i] {
 .bigPolygon{
     z-index: -50;
     position: absolute;
-    top: 400px;
+    top: 355px;
     left: -320px;
 }
 .mediumPolygon{
@@ -174,7 +176,7 @@ input[type="radio" i] {
     right: -31px;
 }
 .next-btn, .prev-btn {
-    background: url(../svg/Button\ Default.svg) no-repeat center/cover;
+    background: url(../svg/buttonDefault.svg) no-repeat center/cover;
     color: #2D1401;
     width: 124px;
     height: 111px;
@@ -199,7 +201,7 @@ input[type="radio" i] {
 
 .next-btn:focus,
 .prev-btn:focus {
-    background-image: url(../svg/Button\ Click.svg);
+    background-image: url(../svg/buttonClick.svg);
     color: #ffffff;
 }
 
@@ -209,7 +211,7 @@ input[type="radio" i] {
     z-index: 20;
     width: 100%;
     height: 100vh;
-    background-color:blanchedalmond ;
+    background-color:#FFF0C9 ;
 }
 #responseError{
     display: none;
@@ -217,5 +219,5 @@ input[type="radio" i] {
     z-index: 10;
     width: 100%;
     height: 100vh;
-    background-color:blanchedalmond ;
+    background-color:FFF0C9 ;
 } 

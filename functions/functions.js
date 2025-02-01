@@ -24,7 +24,7 @@ function timeUpdater(noOfMinutes) {
         // Stop and redirect when time is up
         if (time <= 0) {
             clearInterval(intervalTd); // Stop the timer
-            window.location.replace(`../timeout/timeout.html`);
+            window.location.replace(`../timeout/timeOut.html`);
         }
 
         time--; // Decrease time
@@ -60,7 +60,7 @@ function flagToggle(btn) {
         console.log('love1');
         flagbut.src  = "../svg/flagFill.svg";
         // flagList.innerHTML+=`<div id="flag${index}" onclick="flagNav(this)"><p style="background-color: #ffa200">Question:${index+1}</p></div>`
-        flagList.children[index].style.backgroundImage = `url('../svg/Flag active.svg')`
+        flagList.children[index].style.backgroundImage = `url('../svg/flagActive.svg')`
         flagList.children[index].style.color = '#2D1401';
         flagList.children[index].dataset.flag = 'flaged';
         flagArr.push(index);
@@ -73,7 +73,7 @@ function flagToggle(btn) {
 
         flagbut.src  = "../svg/flagStrock.svg";
         flagArr.splice(flagArr.indexOf(index),1);
-        flagList.children[index].style.backgroundImage = `url('../svg/Flag disable.svg')`
+        flagList.children[index].style.backgroundImage = `url('../svg/flagDisable.svg')`
         flagList.children[index].style.color = '#c2955d93';
         flagList.children[index].dataset.flag = 'unflaged';
         flagbut.dataset.flag = "unFlaged";

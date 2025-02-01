@@ -28,8 +28,6 @@ function emailValidation(inputElement , errorElement ){
 
     // check if the mail include is empty
     if(inputemail === ""){
-    //     errorElement.style.display = "block";
-    //     errorElement.innerHTML = "Email Shouldn't be empty";
         emailFilled = false;
         emailErrorVisible = false;
         return false

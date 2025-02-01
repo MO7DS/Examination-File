@@ -1,339 +1,328 @@
 {
-    "easy": [
-      {
-        "type": "single-choice",
-        "question": "What does UI stand for?",
-        "answers": [
-          "User Interface",
-          "Universal Interaction",
-          "Unified Interface",
-          "User Interaction"
-        ],
-        "rightAnswer": 0
-      },
-      {
-        "type": "single-choice",
-        "question": "What does HTML stand for?",
-        "answers": [
-          "Hypertext Markup Language",
-          "Hyper Tool Markup Language",
-          "Home Tool Markup Language",
-          "Hyper Transfer Markup Language"
-        ],
-        "rightAnswer": 0
-      },
-      {
-        "type": "single-choice",
-        "question": "Which HTML tag is used to create a hyperlink?",
-        "answers": [
-          "&lt;a&gt;",
-          "&lt;link&gt;",
-          "&lt;href&gt;",
-          "&lt;hyperlink&gt;"
-        ],
-        "rightAnswer": 0
-      },
-      {
-        "type": "single-choice",
-        "question": "Which HTML element is used to display an image?",
-        "answers": [
-          "&lt;img&gt;",
-          "&lt;image&gt;",
-          "&lt;picture&gt;",
-          "&lt;src&gt;"
-        ],
-        "rightAnswer": 0
-      },
-      {
-        "type": "single-choice",
-        "question": "What does CSS stand for?",
-        "answers": [
-          "Cascading Style Sheets",
-          "Creative Style Sheets",
-          "Color Style Sheets",
-          "Computer Style Sheets"
-        ],
-        "rightAnswer": 0
-      },
-      {
-        "type": "single-choice",
-        "question": "Which CSS property is used to change the background color of an element?",
-        "answers": [
-          "bgcolor",
-          "background-color",
-          "color",
-          "bg-color"
-        ],
-        "rightAnswer": 1
-      },
-      {
-        "type": "single-choice",
-        "question": "Which property is used to change the text color in CSS?",
-        "answers": [
-          "color",
-          "font-color",
-          "text-color",
-          "text-style"
-        ],
-        "rightAnswer": 0
-      },
-      {
-        "type": "single-choice",
-        "question": "Which HTML tag is used to create a list?",
-        "answers": [
-          "&lt;ol&gt;",
-          "&lt;ul&gt;",
-          "&lt;list&gt;",
-          "&lt;li&gt;"
-        ],
-        "rightAnswer": 1
-      },
-      {
-        "type": "single-choice",
-        "question": "What is the purpose of the alt attribute in an image tag?",
-        "answers": [
-          "It provides a description of the image",
-          "It defines the image width",
-          "It changes the image source",
-          "It makes the image visible"
-        ],
-        "rightAnswer": 0
-      },
-      {
-        "type": "single-choice",
-        "question": "Which HTML element is used to specify the title of a document?",
-        "answers": [
-          "&lt;title&gt;",
-          "&lt;head&gt;",
-          "&lt;meta&gt;",
-          "&lt;header&gt;"
-        ],
-        "rightAnswer": 0
-      }
-    ],
-    "medium": [
-      {
-        "type": "single-choice",
-        "question": "Which CSS selector is used to select elements with a specific class?",
-        "answers": [
-          ".className",
-          "#className",
-          "class.className",
-          "element.className"
-        ],
-        "rightAnswer": 0
-      },
-      {
-        "type": "single-choice",
-        "question": "What does the z-index property in CSS control?",
-        "answers": [
-          "The stacking order of elements",
-          "The position of elements",
-          "The size of elements",
-          "The color of elements"
-        ],
-        "rightAnswer": 0
-      },
-      {
-        "type": "single-choice",
-        "question": "Which property is used to make a webpage responsive in CSS?",
-        "answers": [
-          "width",
-          "height",
-          "flexbox",
-          "media queries"
-        ],
-        "rightAnswer": 3
-      },
-      {
-        "type": "single-choice",
-        "question": "What is the default value of the position property in CSS?",
-        "answers": [
-          "absolute",
-          "relative",
-          "fixed",
-          "static"
-        ],
-        "rightAnswer": 3
-      },
-      {
-        "type": "single-choice",
-        "question": "Which method in JavaScript is used to add an item to the end of an array?",
-        "answers": [
-          "push()",
-          "unshift()",
-          "append()",
-          "add()"
-        ],
-        "rightAnswer": 0
-      },
-      {
-        "type": "single-choice",
-        "question": "In JavaScript, which operator is used to compare both value and type?",
-        "answers": [
-          "==",
-          "===",
-          "!=",
-          "!=="
-        ],
-        "rightAnswer": 1
-      },
-      {
-        "type": "single-choice",
-        "question": "What is the purpose of the 'this' keyword in JavaScript?",
-        "answers": [
-          "It refers to the current object",
-          "It refers to the window object",
-          "It refers to the function itself",
-          "It has no specific purpose"
-        ],
-        "rightAnswer": 0
-      },
-      {
-        "type": "single-choice",
-        "question": "Which of the following is used to comment in JavaScript?",
-        "answers": [
-          "// comment",
-          "&lt;!-- comment --&gt;",
-          "# comment",
-          "/* comment */"
-        ],
-        "rightAnswer": 0
-      },
-      {
-        "type": "single-choice",
-        "question": "Which HTML tag is used to embed JavaScript?",
-        "answers": [
-          "&lt;js&gt;",
-          "&lt;script&gt;",
-          "&lt;javascript&gt;",
-          "&lt;code&gt;"
-        ],
-        "rightAnswer": 1
-      },
-      {
-        "type": "single-choice",
-        "question": "How can you center a div element horizontally using CSS?",
-        "answers": [
-          "margin: 0 auto;",
-          "text-align: center;",
-          "align: center;",
-          "position: center;"
-        ],
-        "rightAnswer": 0
-      }
-    ],
-    "hard": [
-      {
-        "type": "single-choice",
-        "question": "Which of the following is the correct syntax for creating a function in JavaScript?",
-        "answers": [
-          "function() { return 1; }",
-          "function = () =&gt; 1;",
-          "function: { return 1; }",
-          "function() =&gt; { return 1; }"
-        ],
-        "rightAnswer": 0
-      },
-      {
-        "type": "single-choice",
-        "question": "Which method is used to add a new item to the beginning of an array in JavaScript?",
-        "answers": [
-          "push()",
-          "unshift()",
-          "insert()",
-          "prepend()"
-        ],
-        "rightAnswer": 1
-      },
-      {
-        "type": "single-choice",
-        "question": "In JavaScript, what does 'NaN' stand for?",
-        "answers": [
-          "Not a Number",
-          "Null and Nothing",
-          "Not a Name",
-          "None at all"
-        ],
-        "rightAnswer": 0
-      },
-      {
-        "type": "single-choice",
-        "question": "What is the purpose of a closure in JavaScript?",
-        "answers": [
-          "To store private variables",
-          "To execute code asynchronously",
-          "To return a function from another function",
-          "To create objects"
-        ],
-        "rightAnswer": 2
-      },
-      {
-        "type": "single-choice",
-        "question": "Which of the following is used to make asynchronous requests in JavaScript?",
-        "answers": [
-          "XMLHttpRequest",
+  "easy": [
+    {
+      "type": "single-choice",
+      "question": "What does UI stand for?",
+      "answers": ["User Interface", "Universal Interaction", "Unified Interface", "User Interaction" ],
+      "rightAnswer": 0
+    },
+    {
+      "type": "multi-choice",
+      "question": "Which of the following are used to style web pages?",
+      "answers": ["CSS","JavaScript", "HTML","Python"],
+      "rightAnswer": [0, 1]
+    },
+    {
+      "type": "single-choice",
+      "question": "Which HTML tag is used to create a hyperlink?",
+      "answers": [
+        "&lt;a&gt;",
+        "&lt;link&gt;",
+        "&lt;href&gt;",
+        "&lt;hyperlink&gt;"
+      ],
+      "rightAnswer": 0
+    },
+    {
+      "type": "multi-choice",
+      "question": "Which of the following are valid CSS units?",
+      "answers": [
+        "px",
+        "em",
+        "rem",
+        "sec"
+      ],
+      "rightAnswer": [0, 1, 2]
+    },
+    {
+      "type": "single-choice",
+      "question": "What does CSS stand for?",
+      "answers": [
+        "Cascading Style Sheets",
+        "Creative Style Sheets",
+        "Color Style Sheets",
+        "Computer Style Sheets"
+      ],
+      "rightAnswer": 0
+    },
+    {
+      "type": "multi-choice",
+      "question": "Which elements are block-level by default?",
+      "answers": [
+        "&lt;div&gt;",
+        "&lt;span&gt;",
+        "&lt;p&gt;",
+        "&lt;h1&gt;"
+      ],
+      "rightAnswer": [0, 2, 3]
+    },
+    {
+      "type": "single-choice",
+      "question": "Which CSS property is used to change the text color?",
+      "answers": [
+        "color",
+        "font-color",
+        "text-color",
+        "text-style"
+      ],
+      "rightAnswer": 0
+    },
+    {
+      "type": "multi-choice",
+      "question": "Which are valid HTML5 elements?",
+      "answers": [
+        "header",
+        "footer",
+        "section",
+        "part"
+      ],
+      "rightAnswer": [0, 1, 2]
+    },
+    {
+      "type": "single-choice",
+      "question": "What is the purpose of the alt attribute in an image tag?",
+      "answers": [
+        "It provides a description of the image",
+        "It defines the image width",
+        "It changes the image source",
+        "It makes the image visible"
+      ],
+      "rightAnswer": 0
+    },
+    {
+      "type": "multi-choice",
+      "question": "Which tags are used to create a table in HTML?",
+      "answers": [
+        "&lt;table&gt;",
+        "&lt;tr&gt;",
+        "&lt;td&gt;",
+        "&lt;section&gt;"
+      ],
+      "rightAnswer": [0, 1, 2]
+    }
+  ],
+  "medium": [
+    {
+      "type": "single-choice",
+      "question": "Which CSS selector is used to select elements with a specific class?",
+      "answers": [
+        ".className",
+        "#className",
+        "class.className",
+        "element.className"
+      ],
+      "rightAnswer": 0
+    },
+    {
+      "type": "multi-choice",
+      "question": "Which CSS properties are used for positioning elements?",
+      "answers": [
+        "position",
+        "z-index",
+        "flex",
+        "align"
+      ],
+      "rightAnswer": [0, 1, 2]
+    },
+    {
+      "type": "single-choice",
+      "question": "Which method in JavaScript is used to add an item to the end of an array?",
+      "answers": [
+        "push()",
+        "unshift()",
+        "append()",
+        "add()"
+      ],
+      "rightAnswer": 0
+    },
+    {
+      "type": "multi-choice",
+      "question": "Which JavaScript data types exist?",
+      "answers": [
+        "Number",
+        "String",
+        "Boolean",
+        "Object"
+      ],
+      "rightAnswer": [0, 1, 2, 3]
+    },
+    {
+      "type": "single-choice",
+      "question": "Which CSS selector is used to select elements with a specific class?",
+      "answers": [
+        ".className",
+        "#className",
+        "class.className",
+        "element.className"
+      ],
+      "rightAnswer": 0
+    },
+    {
+      "type": "single-choice",
+      "question": "What does the z-index property in CSS control?",
+      "answers": [
+        "The stacking order of elements",
+        "The position of elements",
+        "The size of elements",
+        "The color of elements"
+      ],
+      "rightAnswer": 0
+    },
+    {
+      "type": "single-choice",
+      "question": "Which property is used to make a webpage responsive in CSS?",
+      "answers": [
+        "width",
+        "height",
+        "flexbox",
+        "media queries"
+      ],
+      "rightAnswer": 3
+    },
+    {
+      "type": "single-choice",
+      "question": "What is the default value of the position property in CSS?",
+      "answers": [
+        "absolute",
+        "relative",
+        "fixed",
+        "static"
+      ],
+      "rightAnswer": 3
+    },
+    {
+      "type": "single-choice",
+      "question": "In JavaScript, which operator is used to compare both value and type?",
+      "answers": [
+        "==",
+        "===",
+        "!=",
+        "!=="
+      ],
+      "rightAnswer": 1
+    },
+    {
+      "type": "single-choice",
+      "question": "Which HTML tag is used to embed JavaScript?",
+      "answers": [
+        "&lt;js&gt;",
+        "&lt;script&gt;",
+        "&lt;javascript&gt;",
+        "&lt;code&gt;"
+      ],
+      "rightAnswer": 1
+    }
+  ],
+  "hard": [
+    {
+      "type": "single-choice",
+      "question": "Which of the following is the correct syntax for creating a function in JavaScript?",
+      "answers": [
+        "function() { return 1; }",
+        "function = () => 1;",
+        "function: { return 1; }",
+        "function() => { return 1; }"
+      ],
+      "rightAnswer": 0
+    },
+    {
+      "type": "multi-choice",
+      "question": "Which of the following JavaScript methods can be used to manipulate arrays?",
+      "answers": [
+        "map()",
+        "filter()",
+        "reduce()",
+        "splice()"
+      ],
+      "rightAnswer": [0, 1, 2, 3]
+    },
+    {
+      "type": "multi-choice",
+      "question": "Which of the following are valid ways to declare a function in JavaScript?",
+      "answers": [
+          "function myFunc() {}",
+          "const myFunc = function() {};",
+          "const myFunc = () => {};",
+          "def myFunc():" 
+      ],
+      "rightAnswer": [0, 1, 2]
+  },
+  {
+      "type": "single-choice",
+      "question": "What does the 'defer' attribute in a script tag do?",
+      "answers": [
+          "Delays script execution until the page is fully loaded",
+          "Runs the script immediately after it is downloaded",
+          "Prevents the script from blocking rendering",
+          "Ensures the script runs in a separate thread"
+      ],
+      "rightAnswer": 0
+  },
+  {
+      "type": "multi-choice",
+      "question": "Which of the following are CSS preprocessors?",
+      "answers": [
+          "SASS",
+          "LESS",
+          "Bootstrap",
+          "PostCSS"
+      ],
+      "rightAnswer": [0, 1, 3]
+  },
+  {
+      "type": "single-choice",
+      "question": "Which HTTP status code indicates a 'Not Found' error?",
+      "answers": [
+          "200",
+          "400",
+          "404",
+          "500"
+      ],
+      "rightAnswer": 2
+  },
+  {
+      "type": "single-choice",
+      "question": "Which JavaScript method is used to fetch data from an API asynchronously?",
+      "answers": [
+          "setTimeout()",
           "fetch()",
-          "axios()",
-          "all of the above"
-        ],
-        "rightAnswer": 3
-      },
-      {
-        "type": "single-choice",
-        "question": "Which of the following is a method to select an element by its class name in JavaScript?",
-        "answers": [
-          "getElementByClassName()",
-          "querySelector()",
-          "getElementById()",
-          "getByClass()"
-        ],
-        "rightAnswer": 0
-      },
-      {
-        "type": "single-choice",
-        "question": "What does 'DOM' stand for in web development?",
-        "answers": [
-          "Document Object Model",
-          "Digital Output Management",
-          "Display Output Model",
-          "Dynamic Object Model"
-        ],
-        "rightAnswer": 0
-      },
-      {
-        "type": "single-choice",
-        "question": "Which property is used to change the font size of an element in CSS?",
-        "answers": [
-          "font-size",
-          "text-size",
-          "font-style",
-          "font-family"
-        ],
-        "rightAnswer": 0
-      },
-      {
-        "type": "single-choice",
-        "question": "Which HTML element is used to define navigation links?",
-        "answers": [
-          "&lt;nav&gt;",
-          "&lt;links&gt;",
-          "&lt;navigation&gt;",
-          "&lt;a&gt;"
-        ],
-        "rightAnswer": 0
-      },
-      {
-        "type": "single-choice",
-        "question": "In CSS, which property is used to define the space between elements?",
-        "answers": [
-          "margin",
-          "padding",
-          "spacing",
-          "border"
-        ],
-        "rightAnswer": 0
-      }
-    ]
+          "console.log()",
+          "getElementById()"
+      ],
+      "rightAnswer": 1
+  },
+  {
+      "type": "multi-choice",
+      "question": "Which of the following are valid ways to handle asynchronous operations in JavaScript?",
+      "answers": [
+          "Promises",
+          "Callbacks",
+          "Async/Await",
+          "Synchronous functions"
+      ],
+      "rightAnswer": [0, 1, 2]
+  },
+  {
+      "type": "single-choice",
+      "question": "What is the main purpose of the Webpack module bundler?",
+      "answers": [
+          "Optimize images",
+          "Compile TypeScript",
+          "Bundle JavaScript modules",
+          "Create HTML files"
+      ],
+      "rightAnswer": 2
+  },
+  {
+      "type": "multi-choice",
+      "question": "Which of the following are valid ways to add event listeners in JavaScript?",
+      "answers": [
+          "element.addEventListener('click', callback)",
+          "element.onclick = callback",
+          "element.attachEvent('onclick', callback)",
+          "element.addListener('click', callback)"
+      ],
+      "rightAnswer": [0, 1, 2]
   }
-  
+  ]
+}

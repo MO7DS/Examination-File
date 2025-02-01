@@ -22,10 +22,10 @@
 
 }
 .polygonSignUp{
-    background-image: url(../svg/signUp.svg);
+    background-image: url(../svg/signup.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 420px;
+    width: 422px;
     height:378px;
     display: flex;
     justify-content: center;

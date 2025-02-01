@@ -24,7 +24,7 @@ function timeUpdater(noOfMinutes) {
         // Stop and redirect when time is up
         if (time <= 0) {
             clearInterval(intervalTd); // Stop the timer
-            window.location.replace(`../timeout/timeOut.html`);
+            window.location.replace(`../timeout/timeout.html`);
         }
 
         time--; // Decrease time

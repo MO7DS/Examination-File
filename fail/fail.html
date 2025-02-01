@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Failed</title>
+    <link rel="stylesheet" href="../globle-style.css">
+    <link rel="stylesheet" href="path.css">
+</head>
+<body>
+    <!-- <img src="../svg/Small  polygon.svg" width="636" class="bigPolygon" alt="Big Polygon"> -->
+    <div class="container">
+        <img src="../svg/Small  polygon.svg" width="100" class="smallPolygon" alt="Small Polygon">
+        <img src="../svg/Medium polygon.svg" width="100" class="mediumPolygon" alt="Medium Polygon">
+        <div class="fail">
+            <p class = 'title'> Oops!</p>
+            <div class="description">
+                <p class = 'titleDescription'>Your current score is <span id = 'score'></span> </p>
+                <p class ='titleDescription'><span id = "userName"></span> take another look and give it another try.</p>
+            </div>
+        </div>    
+        <img
+            src="../gif/sad-tears.gif"
+            trigger="loop"
+            style="width:250px;height:250px">
+        </img>
+            
+        <button class = "submit mediumButton" onclick=" window.location.replace(`../log-in/log-in.html`)">Try Again</button>
+        
+    </div>
+
+</body>
+<script>
+    const score = document.getElementById('score');
+    const userName = document.getElementById('userName');
+    
+    score.innerHTML = `${sessionStorage.getItem('score')}%`;
+    userName.innerHTML = localStorage.getItem('userFirstName');
+</script>
+</html>
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading Screen Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+
+    }
+    .loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      z-index: 1000;
+    }
+    .content {
+      display: none; /* Initially hidden */
+    }
+  </style>
+</head>
+<body>
+
+<div class="loading-screen" id="loadingScreen">
+  <img src="../media/loading-bee.gif" alt="loading bee gif">
+  Loading, please wait...
+</div>
+<div class="content" id="content">
+  <h1>Fetched Data</h1>
+  <ul id="dataList"></ul>
+</div>
+
+<script>
+  // async function fetchData() {
+  //   const loadingScreen = document.getElementById('loadingScreen');
+  //   const content = document.getElementById('content');
+  //   const dataList = document.getElementById('dataList');
+  //
+  //   try {
+  //     // Show loading screen
+  //     loadingScreen.style.display = 'flex';
+  //
+  //     // Simulate a fetch delay (use actual fetch in real applications)
+  //     const response = await new Promise((resolve) => {
+  //       setTimeout(() => {
+  //         resolve([
+  //           "Question 1: What is UI?",
+  //           "Question 2: What is UX?",
+  //           "Question 3: What is responsive design?"
+  //         ]);
+  //       }, 2000); // Simulate 2 seconds delay
+  //     });
+  //
+  //     // Display fetched data
+  //     response.forEach((item) => {
+  //       const li = document.createElement('li');
+  //       li.textContent = item;
+  //       dataList.appendChild(li);
+  //     });
+  //
+  //     // Hide loading screen and show content
+  //     loadingScreen.style.display = 'none';
+  //     content.style.display = 'block';
+  //   } catch (error) {
+  //     console.error('Error fetching data:', error);
+  //     loadingScreen.textContent = 'Error loading data.';
+  //   }
+  // }
+  //
+  // // Call fetchData when the page loads
+  // fetchData();
+</script>
+</body>
+</html>

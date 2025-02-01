@@ -1,0 +1,82 @@
+.bigPolygon{
+    z-index: -50;
+    position: absolute;
+    top: 470px;
+    left: -199px;
+}
+.container{
+    flex-direction: column;
+    gap:56px
+}
+.contentContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+    gap:32px;
+}
+.logo{
+    margin: 0px 0px;
+    display: block;
+    
+}
+.logo p{
+    font-family: inter;
+    font-size:24px;
+    font-weight:800;
+    color:#2D1401;
+    margin: 24px 0px 0px;
+}
+.logo span{
+    color:#FAAE27;
+}
+.field{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.fieldBox{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(../svg/Exam\ Default.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:245px;
+    height:220px;
+}
+.title{
+    text-align: left;
+    font-size: 48px;
+}
+.titleDescription{
+    color: #2d1401;
+    text-align:left;
+}
+.authenticationDescription{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+.fieldTitle , .time{
+    text-align: center;
+    color: white;
+}
+.fieldTitle{
+    font-size:24px;
+    font-weight: 800;
+}
+.time{
+    font-size: 18px;
+    font-weight: 500;
+}
+.field > .fieldBox:nth-child(even){
+    position: relative;
+    top: 110px;
+    left: -40px;
+}

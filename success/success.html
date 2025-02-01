@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <link rel="stylesheet" href="../globle-style.css">
+    <link rel="stylesheet" href="../fail/path.css">
+</head>
+<body>
+    <!-- <img src="../svg/Small  polygon.svg" width="636" class="bigPolygon" alt="Big Polygon"> -->
+    <div class="container">
+        <img src="../svg/Small  polygon.svg" width="100" class="smallPolygon" alt="Small Polygon">
+        <img src="../svg/Medium polygon.svg" width="100" class="mediumPolygon" alt="Medium Polygon">
+        <div class="fail">
+            <p class = 'title'>Great <span style ='color:#FAAE27;' >job!</span></p>
+            <div class="authenticationDescription">
+                <p class = 'titleDescription'>Your current score is <span id = 'score' style ='color:#FAAE27;'></span> </p>
+                <p class = 'titleDescription'><span id = "userName" ></span> , go ahead and start exploring</p>
+            </div>
+        </div>    
+        <img
+            src="../gif/the-blobs-live-on-bee.gif"
+            trigger="loop"
+            style="width:250px;height:250px">
+        </img>
+            
+        <button class = "submit mediumButton" style ='background-color:#FAAE27; color:#2D1401;'onclick=" window.location.replace(`../log-in/log-in.html`)">Let's Back!</button>
+        
+    </div>
+
+</body>
+<script>
+    const score = document.getElementById('score');
+    const userName = document.getElementById('userName');
+    
+    score.innerHTML = `${sessionStorage.getItem('score')}%`;
+    userName.innerHTML = localStorage.getItem('userFirstName');
+</script>
+</html>
+

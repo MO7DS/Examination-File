@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+    <link rel="stylesheet" href="../globle-style.css">
+    <link rel="stylesheet" href="log-in.css">
+</head>
+<body>
+
+    <img src="../svg/Small  polygon.svg" width="636" class="bigPolygon" alt="Big Polygon">
+    <img src="../svg/Small  polygon.svg" width="100" class="smallPolygon" alt="Small Polygon">
+    <img src="../svg/Medium polygon.svg" width="100" class="mediumPolygon" alt="Medium Polygon">
+    <div class="container">
+        <div class="signUpContent">
+            <div class="Biglogo">
+                <p>Quiz<span>Bee</span></p>
+            </div>
+        
+            <div class="polygonLogin">
+                <div class = "signUpDescription">
+                    <p class = 'title'>Log in</p>
+                    <div class = 'authenticationDescription'>
+                        <p class = 'titleDescription'>Already have an account?</p>
+                        <p class = 'titleDescription'>Log in now and continue where you left off! 🐝</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <img src="../svg/Cover Sign & Login.svg" width="300" class="authinticationPolygon" alt="Authentication Cover">
+            <form>
+                <div class = "inputField">
+                    <label for = "email">Email</label>
+                    <input type = "text" name = "" id = "email" placeholder = "Enter your email" >
+                    <p class = "emailError authenticationError"></p>
+                </div>
+                <div class = "inputField">
+                    <label for = "password" >Password</label>
+                    <input type = "password" name = "" id = "password" placeholder = "Enter your password">
+                    <p class = "passwordError authenticationError"></p>
+                </div>
+                <p class = "userValidation authenticationError"></p>
+                <button type = "submit" class = "submit largButton">log in</button>        
+            </form>
+        </div>
+    </div>
+   
+</body>
+<script src = "log-in.js"></script>
+</html>

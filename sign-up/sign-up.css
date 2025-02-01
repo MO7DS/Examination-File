@@ -1,0 +1,104 @@
+*{
+    margin:0px;
+}
+
+.container{
+    display: flex;
+    width: 80%;
+    margin: 0px 144px;
+    height:100%;
+}
+.smallPolygon{
+    position: absolute;
+    top:20px;
+    left:-60px
+}
+
+.signUpContent{
+    width :50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+
+}
+.polygonSignUp{
+    background-image: url(../svg/Signup.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 420px;
+    height:378px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 48px;
+    top: 204px;
+}
+.signUpDescription{
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+    width: 230px;
+}
+.title{
+    font-family: inter;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 800;
+    color: #FAAE27;
+    margin: 0px;
+}
+.authenticationDescription{
+    display: flex;
+    flex-direction:column;
+    gap:8px;
+}
+.titleDescription{
+    font-family: inter;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    margin: 0px;
+    color: #ffffff;
+}
+
+.form{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+
+}
+
+form{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    
+}
+
+.inputField{
+    display: flex;
+    flex-direction: column;
+    font-family: inter;
+    
+}
+
+
+
+.nameFiled{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nameFiled .authenticationError{
+    width : 95% 
+}
+.nameFiled .inputField{
+    width:48%;
+}
+

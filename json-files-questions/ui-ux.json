@@ -1,0 +1,188 @@
+{
+  "easy": [
+    {
+      "type": "single-choice",
+      "question": "What does UI stand for?",
+      "answers": ["User Interface", "Universal Interaction", "Unified Interface", "User Interaction"],
+      "rightAnswer": 0
+    },
+    {
+      "type": "multi-choice",
+      "question": "Which practices help improve UX?",
+      "answers": ["Testing with users", "Adding long texts", "Simplifying navigation", "Using high-quality visuals"],
+      "rightAnswer": [0, 2, 3]
+    },
+    {
+      "type": "single-choice",
+      "question": "Which tool is commonly used for creating wireframes?",
+      "answers": ["VS Code", "Sublime Text", "Photoshop", "Figma"],
+      "rightAnswer": 3
+    },
+    {
+      "type": "multi-choice",
+      "question": "What are common elements of a UI?",
+      "answers": ["Headers", "Graphs", "Buttons", "Text fields"],
+      "rightAnswer": [0, 2, 3]
+    },
+    {
+      "type": "single-choice",
+      "question": "What does the term \"responsive design\" refer to?",
+      "answers": ["Designs optimized for user feedback", "Designs that use vibrant colors", "Designs with quick loading times", "Designs that adapt to different screen sizes"],
+      "rightAnswer": 3
+    },
+    {
+      "type": "multi-choice",
+      "question": "Which tools are useful for UX designers?",
+      "answers": ["Figma", "Excel", "Sketch", "Blender"],
+      "rightAnswer": [0, 2]
+    },
+    {
+      "type": "single-choice",
+      "question": "What is the main goal of usability in UX?",
+      "answers": ["Enhancing visuals", "Improving user interaction", "Increasing website traffic", "Focusing on branding"],
+      "rightAnswer": 1
+    },
+    {
+      "type": "multi-choice",
+      "question": "What are key features of a good navigation bar?",
+      "answers": ["Clear labels", "Hidden links", "Search functionality", "Responsive design"],
+      "rightAnswer": [0, 2, 3]
+    },
+    {
+      "type": "single-choice",
+      "question": "What is the purpose of a wireframe?",
+      "answers": ["To test animations", "To plan layouts", "To evaluate performance", "To create color schemes"],
+      "rightAnswer": 1
+    },
+    {
+      "type": "multi-choice",
+      "question": "What factors influence a good homepage design?",
+      "answers": ["Quick loading time", "Cluttered layout", "Clear call-to-action", "Readable fonts"],
+      "rightAnswer": [0, 2, 3]
+    }
+  ],
+  "medium": [
+    {
+      "type": "multi-choice",
+      "question": "Which of the following are principles of good UI design?",
+      "answers": ["Complexity", "Consistency", "Clarity", "Feedback"],
+      "rightAnswer": [1, 2, 3]
+    },
+    {
+      "type": "single-choice",
+      "question": "What is the primary goal of UX design?",
+      "answers": ["To create aesthetically pleasing visuals", "To maximize system performance", "To ensure data security", "To enhance user satisfaction"],
+      "rightAnswer": 3
+    },
+    {
+      "type": "multi-choice",
+      "question": "Which factors influence a good user experience?",
+      "answers": ["Speed", "Ease of use", "Visual design", "Content relevance"],
+      "rightAnswer": [1, 2, 3]
+    },
+    {
+      "type": "single-choice",
+      "question": "What is the Z-pattern layout commonly used for?",
+      "answers": ["Mobile app design", "Form design", "Game interfaces", "Webpage scanning"],
+      "rightAnswer": 3
+    },
+    {
+      "type": "multi-choice",
+      "question": "Which metrics are used to measure UX success?",
+      "answers": ["Bounce rate", "Page views", "Time on page", "Task completion rate"],
+      "rightAnswer": [0, 3]
+    },
+    {
+      "type": "single-choice",
+      "question": "What is the purpose of a usability test?",
+      "answers": ["To evaluate system performance", "To gather business requirements", "To test code functionality", "To assess user interactions"],
+      "rightAnswer": 3
+    },
+    {
+      "type": "single-choice",
+      "question": "What is a user persona?",
+      "answers": ["A fictional character representing users", "A wireframe prototype", "A design template", "A software testing method"],
+      "rightAnswer": 0
+    },
+    {
+      "type": "multi-choice",
+      "question": "What are benefits of iterative design?",
+      "answers": ["Continuous improvement", "Faster launch", "Ignoring feedback", "Enhanced user satisfaction"],
+      "rightAnswer": [0, 1, 3]
+    },
+    {
+      "type": "single-choice",
+      "question": "What is A/B testing?",
+      "answers": ["A method to compare two designs", "A usability testing tool", "A coding technique", "A graphic design principle"],
+      "rightAnswer": 0
+    },
+    {
+      "type": "multi-choice",
+      "question": "What does the design process typically include?",
+      "answers": ["Research", "Prototyping", "Deployment", "Animation"],
+      "rightAnswer": [0, 1, 2]
+    }
+  ],
+  "hard": [
+    {
+      "type": "single-choice",
+      "question": "Which color combination is best for readability on screens?",
+      "answers": ["White text on yellow background", "Blue text on yellow background", "Red text on green background", "Black text on white background"],
+      "rightAnswer": 3
+    },
+    {
+      "type": "multi-choice",
+      "question": "What are key elements of user-centered design?",
+      "answers": ["User research", "Prototyping", "Iterative testing", "Ignoring feedback"],
+      "rightAnswer": [0, 1, 2]
+    },
+    {
+      "type": "single-choice",
+      "question": "Which UX law states that users will take the path of least resistance?",
+      "answers": ["Gestalt Principle", "Hick's Law", "Law of Least Effort", "Fitts's Law"],
+      "rightAnswer": 2
+    },
+    {
+      "type": "multi-choice",
+      "question": "What are common accessibility features in UI design?",
+      "answers": ["Screen reader support", "Flashy animations", "High contrast mode", "Keyboard navigation"],
+      "rightAnswer": [0, 2, 3]
+    },
+    {
+      "type": "single-choice",
+      "question": "What is an empathy map used for in UX design?",
+      "answers": ["Designing wireframes", "Understanding user emotions", "Tracking project milestones", "Analyzing website traffic"],
+      "rightAnswer": 1
+    },
+    {
+      "type": "multi-choice",
+      "question": "What are common pitfalls in UX design?",
+      "answers": ["Ignoring user feedback", "Consistent design", "Clear navigation", "Overloading interfaces"],
+      "rightAnswer": [0, 3]
+    },
+    {
+      "type": "single-choice",
+      "question": "What is the main focus of Fitts's Law?",
+      "answers": ["Predicting eye movement", "Measuring page speed", "Optimizing target accessibility", "Designing with aesthetics"],
+      "rightAnswer": 2
+    },
+    {
+      "type": "multi-choice",
+      "question": "What are benefits of conducting usability testing?",
+      "answers": ["Identifying pain points", "Improving code performance", "Gaining user insights", "Enhancing UI functionality"],
+      "rightAnswer": [0, 2, 3]
+    },
+    {
+      "type": "single-choice",
+      "question": "Which principle ensures users recognize patterns in design?",
+      "answers": ["Simplicity", "Feedback", "Consistency", "Aesthetics"],
+      "rightAnswer": 2
+    },
+    {
+      "type": "multi-choice",
+      "question": "Which steps are part of user research?",
+      "answers": ["Interviews", "Surveys", "Analyzing data", "Skipping documentation"],
+      "rightAnswer": [0, 1, 2]
+    }
+  ]
+}

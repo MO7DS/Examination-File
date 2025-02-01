@@ -1,0 +1,139 @@
+body{
+    position: relative;
+    overflow: hidden;
+    height:100vh;
+    margin:0px;
+    font-family:inter;
+}
+.bigPolygon{
+    z-index: -50;
+    position: absolute;
+    top: 400px;
+    left: -151px;
+}
+.title{
+    font-family: inter;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 800;
+    color: #2D1401;
+    margin: 0px;
+}
+.titleDescription{
+    font-family: inter;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    margin: 0px;
+    color: #2d1401be;
+}
+.authinticationPolygon{
+    position: absolute;
+    top : -240px;
+    right : 24%;
+    color: #703000;
+}
+.smallPolygon{
+    position: absolute;
+    top:20px;
+    left:-60px
+}
+.Biglogo{
+    margin: 64px 0px;
+    display: inline-block;
+    position: absolute;
+    
+}
+.Biglogo p{
+    font-family: inter;
+    font-size:64px;
+    font-weight:800;
+    color:#2D1401;
+    margin: 0px;
+}
+.Biglogo span{
+    color:#FAAE27;
+}
+.mediumPolygon{
+    z-index: -50;
+    position: absolute;
+    top: 517px;
+    right: -31px;
+}
+.container{
+    display: flex;
+    /* height: 100vh; */
+    width: 80%;
+    margin: 0px 144px;
+}
+.inputField{
+    display: flex;
+    flex-direction: column;
+    font-family: inter;
+    
+}
+label{
+    font-size:18px ;
+    color:#703000;
+    width:95%;
+}
+input{
+    border: 2.6px solid #703000;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 12px;
+    margin: 4px 0px;
+    color:#703000;
+    font-weight: 500;
+}
+input:focus{
+    outline : 0px;
+}
+input::placeholder{
+    color:#b4690e9f
+}
+
+.largButton{
+    width: 100%;
+    padding: 12px ;
+    color:#2D1401;
+    background-color: #FAAE27;
+    margin-top:40px;
+    font-size:24px;
+    font-weight: 600;
+    border:0px solid;   
+    border-radius:12px;
+    -webkit-border-radius:12px;
+    -moz-border-radius:12px;
+    -ms-border-radius:12px;
+    -o-border-radius:12px;
+}
+.authenticationError{
+    color:#E90000;
+    font-weight: 500;
+    font-size:16;
+    max-width: 95%;
+    display: none;
+}
+.form{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+form{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.inputField{
+    display: flex;
+    flex-direction: column;
+    font-family: inter;
+    
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exam</title>
+    <link rel="stylesheet" href="globle-style.css">
+    <link rel = "stylesheet" href = "./sign-up/sign-up.css">
+
+</head>
+<body>
+    <img src="./svg/Big polygon.svg" width="636" class="bigPolygon" alt="Big Polygon">
+    <img src="./svg/Small  polygon.svg" width="100" class="smallPolygon" alt="Small Polygon">
+    <img src="../svg/Medium polygon.svg" width="100" class="mediumPolygon" alt="Medium Polygon">
+
+   <div class="container">
+        <div class="signUpContent">
+            <div class="Biglogo">
+                <p>Quiz<span>Bee</span></p>
+            </div>
+        
+            <div class="polygonSignUp">
+                <div class = "signUpDescription">
+                    <p class = 'title'>Sign up</p>
+                    <div class = 'authenticationDescription'>
+                        <p class = 'titleDescription'>Join us today and unlock exclusive benefits! </p>
+                        <p class = 'titleDescription'>Sign up now to create your account and start your journey with us.</p>
+                        <p class = 'titleDescription'>It only takes a few seconds 🐝</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <img src="./svg/Cover Sign & Login.svg" width="300" class="authinticationPolygon" alt="Authentication Cover">
+            <form>
+                <div class="nameFiled">
+                    <div class = "inputField">
+                        <label for = "fName">First Name</label>
+                        <input type = "text" name = "" class="fName input" placeholder = "Enter your First Name" >
+                        <p class = "firstNameError authenticationError"></p>
+                    </div>
+                    <div class = "inputField">
+                        <label for = "lName">Last Name</label>
+                        <input type = "text" name = "" class = "lName " placeholder = "Enter your Last Name" >
+                        <p class = "lastNameError authenticationError "></p>
+                    </div>
+                </div>
+                <div class = "inputField">
+                    <label for = "email">Email</label>
+                    <input type = "text" name = "" id = "email" placeholder = "Enter your email" >
+                    <p class = "emailError authenticationError"></p>
+                </div>
+                <div class = "inputField">
+                    <label for = "password">Password</label>
+                    <input type = "password" name = "" id = "password" placeholder = "Enter your password">
+                    <p class = "passwordError authenticationError"></p>
+                </div>
+                <div class = "inputField">
+                    <label for = "confirmPassword">Confirm Password</label>
+                    <input type = "password" name = "" id = "confirmPassword" placeholder = "Confirm your password" >
+                    <p class = "confirmPasswordError authenticationError" style= "display: block;"></p>
+                </div>
+                <button type = "submit" class = "submit largButton">Sign up</button>        
+            </form>
+        </div>
+    </div>
+   
+
+
+    
+</body>
+<script src = "./sign-up/sign-up.js"></script>
+</html>

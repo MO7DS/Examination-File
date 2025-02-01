@@ -76,7 +76,6 @@ function showAnswers(index) {
     if (userAnswers[index]) {
         // Loop through each saved answer
         if(typeof userAnswers[index] == "object"){
-            console.log(index)
             userAnswers[index].forEach(answer => {
                 // Loop through each input to check if its value matches any saved answer
                 inputCheckBox.forEach(input => {
@@ -90,7 +89,6 @@ function showAnswers(index) {
             inputRadio.forEach(input => {
 
                 if (Number(input.value) === (userAnswers[index]-1)) {
-                    console.log(input)
 
                     input.checked = true; // Sets the checkbox or radio button as checked
                 }
@@ -135,12 +133,10 @@ function createAnInstant(data) {
 
     exam.setDifficulty("hard");
     let hardQuestions = exam.getQuestions();
-    console.log(easyQuestions , mediumQuestions , hardQuestions);
     // Shuffle and merge questions from different difficulty levels
     let questionArray = shuffle(easyQuestions);
     questionArray.push(...shuffle(mediumQuestions));
     questionArray.push(...shuffle(hardQuestions));
-    console.log(questionArray);
     return questionArray;
 
 }
@@ -189,7 +185,7 @@ function correctAnswars(event , questionsContainer){
             }
         }
         else{
-            if(answers === rightAnswer){
+            if((answers-1) === rightAnswer){
                 userScore += questionScore;
             }else{
                 wrongAnswers.push(questionTest)

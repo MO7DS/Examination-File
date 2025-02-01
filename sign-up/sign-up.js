@@ -376,8 +376,8 @@ password.addEventListener("blur" , (event) =>{
     }
 })
 
-confirmPasssword.addEventListener('input' , () => {confirmPasswordError.style.display = "none"});
-confirmPasssword.addEventListener('blur' , (event) => {
+// confirmPasssword.addEventListener('input' , () => {confirmPasswordError.style.display = "none"});
+confirmPasssword.addEventListener('input' , (event) => {
     confirmPasswordErrorVisible = confirmPasswordValidation(event.target , confirmPasswordError , password.value)    
 })
 

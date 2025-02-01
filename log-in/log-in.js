@@ -150,7 +150,7 @@ function checkVlidation(event){
         userError.style.display = "none"
         let dataCheck = checkEmailInLocalStorage(email.value.toLowerCase().trim() , password.value);
         if(dataCheck){
-            window.location.replace(`../fieldQuestion/chooseField.html`);
+            window.location.replace(`../field-question/choose-field.html`);
             return true;
         }
         userError.style.display = "block"

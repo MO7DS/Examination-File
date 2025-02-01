@@ -276,20 +276,15 @@ function confirmPasswordValidation(inputElement , errorElement , originalPasswor
 }
 
 
-function checkVlidation(event){
+function checkValidation(event){
     event.preventDefault();
     let isValid = true;
-    console.log(firstNameErrorVisible);
     
-    if(!firstNameErrorVisible){
-        isValid = false;
-        return false;
-    }
-    else if(!nameFilled[0]){
+    if(!nameFilled[0]){
         firstNameError.style.display = "block";
         firstNameError.innerHTML = "This Field is Required";
-        isValid = false;
         event.preventDefault();
+        isValid = false;
         return false;
     }
 
@@ -297,17 +292,11 @@ function checkVlidation(event){
         return false;
     }
 
-    if(!firstNameErrorVisible){
-        isValid = false;
-        return false;
-    }
-    else if(!nameFilled[1]){
-        console.log(nameFilled[1]);
-
+    if(!nameFilled[1]){
         lastNameError.style.display = "block";
         lastNameError.innerHTML = "This Field is Required";
-        isValid = false;
         event.preventDefault();
+        isValid = false;
         return false;
     }
 
@@ -315,11 +304,7 @@ function checkVlidation(event){
         return false;
     }
 
-
-    if(!emailErrorVisible){
-        isValid = false;
-        return false;
-    }else if(!emailFilled){
+    if(!emailFilled){
         emailError.style.display = "block";
         emailError.innerHTML = "This Field is Required";
         event.preventDefault();
@@ -327,39 +312,30 @@ function checkVlidation(event){
         return false;
     }
 
-    
     if(!isValid){
         return false;
     }
-
     
-    if(!passwordErrorVisible){
-        isValid = false;
-        return false;
-    }else if(!passwordFilled){
+    if(!passwordFilled){
         passwordError.style.display = "block";
         passwordError.innerHTML = "This Field is Required";
-        isValid = false;
         event.preventDefault();
+        isValid = false;
         return false;
     }
-
 
     if(!isValid){
         return false;
     }
 
-    if(!confirmPasswordErrorVisible){
-        isValid = false;
-        return false;
-    }else if(!confirmPassswordFilled){
+    
+    if(!confirmPassswordFilled){
         confirmPasswordError.style.display = "block";
         confirmPasswordError.innerHTML = "This Field is Required";
-        isValid = false;
         event.preventDefault();
+        isValid = false;
         return false;
     }
-
 
 
     localStorage.setItem("userFirstName", firstName.value.trim());
@@ -367,7 +343,7 @@ function checkVlidation(event){
     localStorage.setItem("userEmail", email.value.toLowerCase().trim());
     localStorage.setItem("userPassword", password.value.trim());
 
-    window.location.replace(`../log-in/log-in.html`)
+    window.location.replace(`../log-in/log-in.html`);
 }
 
 
@@ -408,7 +384,7 @@ confirmPasssword.addEventListener('blur' , (event) => {
     confirmPasswordErrorVisible = confirmPasswordValidation(event.target , confirmPasswordError , password.value)    
 })
 
-submit.addEventListener('click', checkVlidation);
+submit.addEventListener('click', checkValidation);
 
 
 form.addEventListener('click', function clearError(event){  

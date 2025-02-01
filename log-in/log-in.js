@@ -125,7 +125,6 @@ function checkVlidation(event){
 
     //show input input required to fill;
 
- 
     if(!emailErrorVisible){
         isValid = false;
         return false;
@@ -136,6 +135,7 @@ function checkVlidation(event){
         isValid = false;
         return false;
     }
+
     if(!isValid){
         return false;
     }
@@ -152,7 +152,7 @@ function checkVlidation(event){
         userError.style.display = "none"
         let dataCheck = checkEmailInLocalStorage(email.value.toLowerCase().trim() , password.value);
         if(dataCheck){
-            window.location.replace(`../html_pages/choose.html`);
+            window.location.replace(`../fieldQuestion/chooseField.html`);
             return true;
         }
         userError.style.display = "block"
@@ -189,20 +189,3 @@ password.addEventListener("blur" , (event) =>{
 })
 
 login.addEventListener('click', checkVlidation);
-
-// form.addEventListener('click', function clearError(event){  
-
-//     //This function role is to clear any error message 
-
-//     if(event.target.tagName == "INPUT"){
-
-//         //Catch the input box 
-//         const currentElement = event.target;
-//         const parent = currentElement.parentElement;
-//         const error = parent.querySelector(".authenticationError");
-//         if(error){
-//             error.style.display = "none";
-//         }
-//     }
-
-// })

@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../globle-style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time's Up</title>
+  <link rel="stylesheet" href="../globle-style.css">
+  <link rel="stylesheet" href="../fail/path.css">
+  <link rel="stylesheet" href="exam-confirmation.css">
 </head>
 <body>
-    <div class = "container">
-        <h2>Do you want to enter to this exam ?</h2>
+  <!-- <img src="../svg/Small  polygon.svg" width="636" class="bigPolygon" alt="Big Polygon"> -->
+  <div class="container">
+      <img src="../svg/Small  polygon.svg" width="100" class="smallPolygon" alt="Small Polygon">
+      <img src="../svg/Medium polygon.svg" width="100" class="mediumPolygon" alt="Medium Polygon">
+      <div class="fail">
+          <p class = 'title' style ='color:#2D1401;'>Do you want to enter to this exam ?</p>
+      </div>    
+      <img
+          src="../gif/55birthday.gif"
+          trigger="loop"
+          style="width:180px;height:180px">
+      </img>
+      <div class="buttonDiv">
+        <button class = "submit mediumButton" style ='background-color:#FAAE27; color:#2D1401;'onclick=" window.location.replace(`../questionShow/exam.html`)">Go to Exam</button>
+      <button class = "submit mediumButton" style ='background-color:#2D1401;color:#FAAE27;'onclick=" window.location.replace(`../fieldQuestion/chooseField.html`)">Back to Field</button>
+      </div>
+  </div>
 
-        <div>
-            <button class = "primary largButton" onclick = "window.open('../questionShow/exam.html','_self')">Go to Exam</button>
-            <button class = "secondary largButton" onclick="window.open('../log-in/log-in.html','_self')">Back to Field</button>
-        </div>
-    </div>
 </body>
-
 </html>

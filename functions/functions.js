@@ -2,34 +2,38 @@ const flagList=document.getElementById("flagList");
 const timer= document.getElementById("timer-display")
 const flagbut = document.getElementById('flagIcon');
 
-function timeUpdater(noOfMinutes){
-    let time=noOfMinutes*60;
+function timeUpdater(noOfMinutes) {
+    let time = noOfMinutes * 60;
+    let timer = document.getElementById("timer-display"); // Ensure this element exists
 
-    // noOfMinutes=noOfMinutes;
+    // Initialize timer display
+    timer.innerText = `${noOfMinutes >= 10 ? noOfMinutes : noOfMinutes > 1 ? '0' + noOfMinutes : '00'}:00`;
 
-    timer.innerText = `${noOfMinutes>=10?noOfMinutes:noOfMinutes>1?'0'+noOfMinutes:'00'}:00`;
-function updateTime() {
-    // console.log(time)
-    let min=Math.floor(time/60);
-    if(time<=(noOfMinutes*60)/2){
-        timer.style.color = "#E90000";
+    function updateTime() {
+        let min = Math.floor(time / 60);
+        let sec = time % 60;
 
+        // Change styles when 1 minute left
+        if (time === 60) {
+            timer.style.color = "#E90000";
+        }
+
+        // Update display
+        timer.innerText = `${min < 10 ? '0' + min : min}:${sec < 10 ? '0' + sec : sec}`;
+
+        // Stop and redirect when time is up
+        if (time <= 0) {
+            clearInterval(intervalTd); // Stop the timer
+            window.location.replace(`../timeout/timeout.html`);
+        }
+
+        time--; // Decrease time
     }
 
-
-    let sec=time%60;
-    time--
-    if(time<0){
-        // window.open();
-        window.location.href=`../timeout/timeout.html`
-        clearInterval(intervalTd)
-    }
-    document.getElementById("timer-display").innerText = `${min<10?'0'+min:min}:${sec<10?'0'+sec:sec}`;
+    let intervalTd = setInterval(updateTime, 1000);
 }
-let intervalTd=setInterval(updateTime, 1000);
 
-}
-timeUpdater(10)   //You can set the time from here
+timeUpdater(3)   //You can set the time from here
 
 
 

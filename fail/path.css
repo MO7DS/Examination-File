@@ -32,6 +32,7 @@
 .mediumButton{
     width: 40%;
     padding: 12px ;
+    cursor: pointer;
     color:#ffffff;
     background-color: #2D1401;
     margin-top:40px;

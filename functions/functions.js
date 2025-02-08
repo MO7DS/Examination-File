@@ -60,7 +60,10 @@ function flagToggle(btn) {
         // flagList.innerHTML+=`<div id="flag${index}" onclick="flagNav(this)"><p style="background-color: #ffa200">Question:${index+1}</p></div>`
         flagList.children[index].style.backgroundImage = `url('../svg/flagActive.svg')`
         flagList.children[index].style.color = '#2D1401';
+        flagList.children[index].style.cursor = "pointer";
         flagList.children[index].dataset.flag = 'flaged';
+
+
         flagArr.push(index);
         flagbut.dataset.flag = "flaged";
 
@@ -69,9 +72,12 @@ function flagToggle(btn) {
 
         flagbut.src  = "../svg/flagStrock.svg";
         flagArr.splice(flagArr.indexOf(index),1);
+        
         flagList.children[index].style.backgroundImage = `url('../svg/flagDisable.svg')`
         flagList.children[index].style.color = '#c2955d93';
+        flagList.children[index].style.cursor = "not-allowed";
         flagList.children[index].dataset.flag = 'unflaged';
+        
         flagbut.dataset.flag = "unFlaged";
     }
 }

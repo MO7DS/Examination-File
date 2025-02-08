@@ -36,13 +36,23 @@
 
 </body>
 <script>
+    const fieldBoxes = document.querySelectorAll('.fieldBox');
+    
+    fieldBoxes.forEach(fieldBox => {
+        fieldBox.addEventListener('mouseenter', function () {
+            fieldBox.style.backgroundImage = `url(../svg/examClick.svg)`;
+        });
+        fieldBox.addEventListener('mouseleave', function () {
+            fieldBox.style.backgroundImage = `url(../svg/examDefault.svg)`;
+        });
+    });
     function btn1() {
-      localStorage.setItem('examType', "front-end.json");
-      window.location.replace(`../exam_confirmation/exam_confirmation.html`)
+        localStorage.setItem('examType', "front-end.json");
+        window.location.replace(`../exam_confirmation/exam_confirmation.html`);
     }
     function btn2() {
-      localStorage.setItem('examType', "ui-ux.json");
-      window.location.replace(`../exam_confirmation/exam_confirmation.html`)
+        localStorage.setItem('examType', "ui-ux.json");
+        window.location.replace(`../exam_confirmation/exam_confirmation.html`)
     }
-  </script>
+    </script>
 </html>

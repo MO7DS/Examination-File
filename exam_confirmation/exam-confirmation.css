@@ -6,17 +6,9 @@
     align-items: center;
     gap: 24px;
 }
-.mediumButton {
-    width: 40%;
-    padding: 12px;
-    color: #ffffff;
-    background-color: #2D1401;
-    margin-top: 0px;
-    font-size: 24px;
-    font-weight: 600;
-    border: 0px solid;
-    border-radius: 12px;
-}
+
+
+
 .title{
     font-family: inter;
     font-size: 36px;

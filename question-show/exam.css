@@ -88,6 +88,7 @@ body{
     font-weight: 600;
     text-align: center;
     align-content:center;
+    cursor:pointer;
 }
 #exam-timer{
     position:relative;
@@ -112,16 +113,17 @@ body{
     flex-direction: column;
     gap: 16px;
 }
-#answers p{
+
+.answersInput{
     padding: 10px 32px;
     color: #2D1401;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
     border: 2px solid #2d140166;
     border-radius: 50px;
     background: #FFF0C9;
-    background: #FFF0C9;
     margin: 0px;
+    width:auto;
 }
 input[type="checkbox" i] {
     margin:0px;
@@ -156,6 +158,7 @@ input[type="radio" i] {
     font-size:32px;
     color:#c2955d93;
     margin:1px 0px;
+    cursor: not-allowed;
 }
 
 #flagList > div:nth-child(even){
@@ -165,8 +168,8 @@ input[type="radio" i] {
 }
 .bigPolygon{
     z-index: -50;
-    position: absolute;
-    top: 355px;
+    position: absolute;    
+    bottom: 0px;
     left: -320px;
 }
 .mediumPolygon{
@@ -187,6 +190,7 @@ input[type="radio" i] {
     align-items: center; /* Centers text vertically */
     justify-content: center; /* Centers text horizontally */
     position: relative;
+    cursor: not-allowed;
 }
 
 .prev-btn {
@@ -201,7 +205,7 @@ input[type="radio" i] {
 
 .next-btn:focus,
 .prev-btn:focus {
-    background-image: url(../svg/buttonClick.svg);
+    background-image: url(../svg/buttonDefault.svg);
     color: #ffffff;
 }
 
@@ -221,3 +225,6 @@ input[type="radio" i] {
     height: 100vh;
     background-color:#ffffff ;
 } 
+#flagIcon{
+    cursor: pointer;
+}

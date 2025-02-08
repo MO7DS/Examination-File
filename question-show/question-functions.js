@@ -1,5 +1,6 @@
 function displayQuestion(arrayQuestions, index) {
     // Update the question and answer options
+    checkNextPrevStatu(index);
     question.innerHTML = `<p>${arrayQuestions[index].question}</p>`;
     answers.innerHTML = ""; // Clear previous answers
     let answerIndex = 0 ;
@@ -7,9 +8,9 @@ function displayQuestion(arrayQuestions, index) {
     checkFlag(index) 
     arrayQuestions[index].answers.forEach(answersElement => {
         if (arrayQuestions[index].type === "single-choice") {
-            answers.innerHTML += `<p><input type="radio" name = "examAnswers" id = "answer${answerIndex}" value = "${answerIndex}" onclick = "saveSingleAnswers(${index} , ${answerIndex})"> <label for = "answer${answerIndex}">${answersElement}</label> </p>`;
+            answers.innerHTML += `<label class = "answersInput"><input type="radio" name = "examAnswers" id = "answer${answerIndex}" value = "${answerIndex}" onclick = "saveSingleAnswers(${index} , ${answerIndex})"> <span for = "answer${answerIndex}">${answersElement}</span> </label>`;
         } else if (arrayQuestions[index].type === "multi-choice") {
-            answers.innerHTML += `<p><input type = "checkbox" name = "examAnswers" id = "answer${answerIndex}"value ="${answerIndex}" onclick = "collectAnswers(${index} , ${answerIndex})"  > <label for = "answer${answerIndex}">${answersElement}</label> </p>`;
+            answers.innerHTML += `<label class = "answersInput"><input type = "checkbox" name = "examAnswers" id = "answer${answerIndex}"value ="${answerIndex}" onclick = "collectAnswers(${index} , ${answerIndex})"  > <span for = "answer${answerIndex}">${answersElement}</span> </label>`;
         }
         answerIndex++;
         
@@ -18,8 +19,44 @@ function displayQuestion(arrayQuestions, index) {
     showAnswers(index);
     currentQuestionNumber.innerHTML = `${index+1}`;
     totalQuestionNumber.innerHTML = `${arrayQuestions.length}`;
+
 }
 
+function checkNextPrevStatu(index){
+    if(index == 0){
+        previousBut.style.opacity = ".5";
+        previousBut.style.backgroundImage = `url(../svg/buttonDefault.svg)`;
+        previousBut.style.color = `#7B7B7B`;
+        previousBut.style.cursor = `not-allowed`;
+
+        nextBut.style.opacity = "1"
+        nextBut.style.backgroundImage = `url(../svg/buttonDefault.svg)`;
+        nextBut.style.color = `#2D1401`;
+        nextBut.style.cursor = `pointer`;
+
+    }else if(index == questionsContainer.length-1){
+        nextBut.style.opacity = ".5";
+        nextBut.style.backgroundImage = `url(../svg/buttonDefault.svg)`;
+        nextBut.style.color = `#7B7B7B`;
+        nextBut.style.cursor = `not-allowed`;
+
+        previousBut.style.opacity = "1"
+        previousBut.style.backgroundImage = `url(../svg/buttonDefault.svg)`;
+        previousBut.style.color = `#2D1401`;
+        previousBut.style.cursor = `pointer`;
+
+    }else{
+        previousBut.style.opacity = "1"
+        previousBut.style.backgroundImage = `url(../svg/buttonDefault.svg)`;
+        previousBut.style.color = `#2D1401`;
+        previousBut.style.cursor = `pointer`;
+        
+        nextBut.style.opacity = "1"
+        nextBut.style.backgroundImage = `url(../svg/buttonDefault.svg)`;
+        nextBut.style.color = `#2D1401`;
+        nextBut.style.cursor = `pointer`
+    }
+}
 // Function to display the current question and its answers
 
 // Collect Answer save the user check box Answer in an array 
@@ -103,7 +140,6 @@ function showAnswers(index) {
 function nextButton(questionsContainer) {
     if (index < questionsContainer.length - 1) {
         index++;
-        answerReturn = displayQuestion(questionsContainer, index);
         checkFlag(index)
         displayQuestion(questionsContainer, index);
     }
@@ -114,6 +150,7 @@ function prevButton(questionsContainer) {
         index--;
         checkFlag(index)
         displayQuestion(questionsContainer, index);
+        
     }
 }
 
@@ -163,10 +200,9 @@ function correctAnswars(event , questionsContainer){
 
     const fullScore = 100;
     let userScore = 0;
-    
-    let questionScore =  Math.floor(( questionsContainer.length / fullScore) * 100) ; 
+    let questionScore = Math.floor(fullScore / questionsContainer.length); 
+
     let index = 0 ;
-    let correct = false;
     let wrongAnswers = [];
     event.preventDefault()
     userAnswers.forEach( (answers) =>{
@@ -193,13 +229,13 @@ function correctAnswars(event , questionsContainer){
         }
         index++;
     })
-    sessionStorage.setItem("wrongAnswers",wrongAnswers);
+    // sessionStorage.setItem("wrongAnswers",wrongAnswers);
     sessionStorage.setItem("score",userScore)
     
-    if(userScore >  fullScore/2){
-        window.location.replace(`../success/success.html`, `_self`)
+    if( userScore >  fullScore / 2){
+        window.location.replace(`../success/success.html`)
     }else{
-        window.location.replace(`../fail/fail.html`, `_self`)
+        window.location.replace(`../fail/fail.html`)
     }
 
 }

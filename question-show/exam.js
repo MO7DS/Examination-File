@@ -72,9 +72,30 @@ setTimeout(function (){
 
 
 
-        // Add event listeners to navigation buttons
-        previousBut.addEventListener('click', () => prevButton(questionsContainer));
-        nextBut.addEventListener('click', () => nextButton(questionsContainer));
+
+        previousBut.addEventListener('click', () => {
+            if (index > 0) {  
+                previousBut.style.backgroundImage = `url(../svg/buttonClick.svg)`;
+                previousBut.style.color = `#ffffff`;
+            }
+            setTimeout(() => {
+                prevButton(questionsContainer)
+            }, 180);
+        });
+        
+        
+        nextBut.addEventListener('click', () => {  
+            if (index < questionsContainer.length - 1) {  
+                nextBut.style.backgroundImage = `url(../svg/buttonClick.svg)`;
+                nextBut.style.color = `#ffffff`;
+            }         
+            setTimeout(() => {
+                nextButton(questionsContainer)
+            }, 180);
+        });
+                    
+        // previousBut.addEventListener('click', () => { setTimeout(() =>{ prevButton(questionsContainer) ,190 } ) } );
+        // nextBut.addEventListener('click', () => {setTimeout(() =>{ nextButton(questionsContainer),190 } ) } );
         submit.addEventListener('click',(event) => correctAnswars(event , questionsContainer));
 
         })
